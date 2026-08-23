@@ -199,33 +199,8 @@ Press `F6` repeatedly and watch `i` and `total` change in the Variables view. Th
 
 ## 7. Segment 6 — Importing Starter Code and Running Tests (0:45 – 0:55)
 
-Every graded lab in this course is distributed as a starter repository containing a template, a README, and a test harness. You will never create graded projects from scratch.
+Every graded lab in this course is distributed as a starter repository containing a template, a README. You will create projects type in code or import template code.
 
-### 7a. Obtain the starter repository
-
-**Step 26.** Accept the GitHub Classroom assignment link supplied by your instructor. This creates a private repository under your GitHub account.
-
-**Step 27.** Clone it into Eclipse: **File ▸ Import ▸ Git ▸ Projects from Git ▸ Clone URI**. Paste the repository HTTPS URL, supply your GitHub credentials or personal access token, accept the default destination, and select **Import existing Eclipse projects** on the final page.
-
-> If Git import is unavailable on your workstation, use the alternative: download the repository ZIP from GitHub, then **File ▸ Import ▸ General ▸ Existing Projects into Workspace ▸ Select archive file**.
-
-### 7b. Execute the test harness
-
-**Step 28.** Locate `TestRunner.java` in the Package Explorer. Right-click it and select **Run As ▸ Java Application**. The Console reports each test case as `PASS` or `FAIL` with a diagnostic message.
-
-**Step 29.** If the lab instead supplies a JUnit 5 test class (a file whose methods are annotated `@Test`), right-click it and select **Run As ▸ JUnit Test**. The JUnit view opens: a green bar indicates all tests passed; a red bar indicates one or more failures. Select any failed entry to read the assertion message and stack trace.
-
-**Step 30.** If Eclipse reports that JUnit is not on the build path, place the cursor on the `@Test` annotation, press `Ctrl + 1`, and select **Add JUnit 5 library to the build path**.
-
-> **Grading note.** The same harness that runs locally runs automatically on GitHub after each push. A test that fails on your workstation will fail in the autograder. Run the tests before every commit.
-
-### 7c. Submit
-
-**Step 31.** Commit and push from Eclipse: right-click the project, select **Team ▸ Commit**, stage the changed files, enter a descriptive commit message, then select **Commit and Push**.
-
-**Step 32.** Confirm on github.com that your commit appears and that the Actions tab reports a successful run. Submission is defined by what is present in the repository at the deadline, not by what is present in your workspace.
-
-**Step 33.** If, and only if, your instructor requests a ZIP archive instead: **File ▸ Export ▸ General ▸ Archive File**, select the project, and name the file `<netid>_Lab00.zip`.
 
 ---
 
@@ -242,8 +217,7 @@ Complete and retain. Your lab instructor will initial items 1 through 8.
 | 5 | I can locate an error in the Problems view and navigate to its line | ☐ |
 | 6 | I have used content assist (`Ctrl + Space`) and format (`Ctrl + Shift + F`) | ☐ |
 | 7 | I have set a breakpoint, stepped with `F6`, and read the Variables view | ☐ |
-| 8 | I have cloned the Lab 01 starter repository and run its test harness | ☐ |
-| 9 | I have pushed at least one commit and confirmed it on github.com | ☐ |
+
 
 ---
 
@@ -279,12 +253,3 @@ Complete and retain. Your lab instructor will initial items 1 through 8.
 | Package Explorer is empty after import | The archive contained a nested folder without `.project`. | Re-import selecting the folder that directly contains `.project` and `src`. |
 
 ---
-
-## 11. Instructor Notes on Pacing
-
-The 60-minute budget assumes a co-located lab with one instructor and one assistant for 25 students. Realistic contingencies:
-
-- **Segments 1–3 (25 min) are non-negotiable.** Every student must reach Checkpoint 2. Do not advance the room until they have.
-- **Segment 5 (debugger) is the first candidate for compression.** If the room is behind schedule, demonstrate it on the projector and defer hands-on practice to Lab 01.
-- **Segment 6 is the second candidate for deferral,** but only if the Classroom assignment is not due before the next meeting. Students who leave without a cloned repository will consume support time later.
-- **Expect the credential prompt in Step 27 to be the largest single time sink.** Institutions requiring personal access tokens should distribute token-creation instructions in advance of the lab, not during it.
