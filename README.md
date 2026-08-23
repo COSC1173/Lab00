@@ -31,11 +31,7 @@ Complete **before** students arrive. Failure to verify these items is the single
 | 1 | JDK 21 (LTS) installed on every workstation | `java -version` and `javac -version` both report 21.x |
 | 2 | Eclipse IDE for Java Developers (2025-09 or later) installed | Launches to the Welcome screen without error |
 | 3 | Workspace directory writable on **local** disk, not the NFS home | See Section 2, Step 3 |
-| 4 | Network access to `github.com` permitted from the lab subnet | `git ls-remote https://github.com/<org>/<repo>.git` |
-| 5 | Starter repository published and Classroom assignment link generated | Accept link resolves for a test account |
 | 6 | Projector mirrors the instructor workstation at a legible font size | Set Eclipse editor font to ≥ 14 pt |
-
-> **NFS advisory.** If student home directories are mounted over NFS, an Eclipse workspace placed in `$HOME` will index slowly and may exhibit workspace-lock errors when a session is not cleanly terminated. Direct students to a local path (for example `C:\Users\<netid>\eclipse-workspace` or `/local/scratch/<netid>/eclipse-workspace`) and instruct them to push source to Git rather than relying on the workspace for persistence.
 
 ---
 
