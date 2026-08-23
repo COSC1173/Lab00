@@ -85,7 +85,7 @@ If any view is missing, restore it with **Window ▸ Show View ▸ <view name>**
 **Step 6.** Complete the New Java Project dialog exactly as follows:
 
 - **Project name:** `Lab00_Orientation`
-- **Use an execution environment JRE:** `JavaSE-21`
+- **Use an execution environment JRE:** `JavaSE-21`, or whatever your Eclipse come with the JavaSE-xx
 - **Project layout:** *Create separate folders for sources and class files* (selected)
 
 Select **Finish**.
