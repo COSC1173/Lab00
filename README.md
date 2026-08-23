@@ -45,6 +45,7 @@ Complete **before** students arrive. Failure to verify these items is the single
 
 ```
 C:\Users\<your-netid>\eclipse-workspace        (Windows lab)
+Press Cmd + Space to open Spotlight search, type Eclipse, and press  (MacOS)
 /local/scratch/<your-netid>/eclipse-workspace  (Linux lab)
 ```
 
